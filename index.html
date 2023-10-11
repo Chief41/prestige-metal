@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -65,7 +65,7 @@
         </p>
       </div>
       <div id="services">
-        <aside class="metiers-liste">
+        <article class="metiers-liste">
           <h2>nos services</h2>
           <ul>
             <li>Charpente métallique</li>
@@ -84,7 +84,7 @@
             </p>
             <button>Contactez-nous</button>
           </div>
-        </aside>
+        </article>
         <article class="photoTaff">
           <h2>Notre galerie</h2>
           <div class="galery">
@@ -95,26 +95,69 @@
           </div>
         </article>
       </div>
+      <div class="formOfForm">
         <form action="formularEntrant" method="POST">
           <label for="firstName">Nom</label>
-          <input type="text" id="firstName" name="nom" placeholder="Saisissez votre nom" required>
-  
+          <input
+            type="text"
+            id="firstName"
+            name="nom"
+            placeholder="Saisissez votre nom"
+            required
+          />
+
           <label for="lastName">prénom</label>
-          <input type="text" id="lastName" name="prénom" placeholder="Saisissez votre prénom" required>
-  
+          <input
+            type="text"
+            id="lastName"
+            name="prénom"
+            placeholder="Saisissez votre prénom"
+            required
+          />
+
           <label for="tel">Numéro de téléphone</label>
-          <input type="tel" id="telephone" name="telephone" placeholder="Saisissez votre numéro de téléphone" required>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="Saisissez votre numéro de téléphone"
+            required
+          />
 
           <label for="email">Adresse e-mail :</label>
-          <input type="email" id="email" name="email" placeholder="Saisissez votre adresse e-mail" required>
-            
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Saisissez votre adresse e-mail"
+            required
+          />
+
           <button>Contactez-nous</button>
         </form>
+        <aside class="timeToContact">
+          <h2>Contactez-nous</h2>
+          <p>
+            Pour entrer en contact avec nous, n'hésitez pas à utiliser l'une des
+            méthodes suivantes. Vous pouvez nous joindre directement par
+            téléphone au 02 00 00 00 00, où nos conseillers expérimentés se
+            feront un plaisir de répondre à vos questions et de vous guider dans
+            vos démarches. Si vous préférez la communication par e-mail, vous
+            pouvez nous écrire à l'adresse suivante :
+            contact@votreentreprise.com. Nous sommes rapides à répondre et à
+            fournir des informations précises pour vous assister au mieux. De
+            plus, si vous souhaitez que l'un de nos conseillers vous rappelle à
+            un moment qui vous convient, n'hésitez pas à laisser vos coordonnées
+            sur notre page de contact. Nous sommes là pour vous simplifier la
+            vie et répondre à vos besoins de manière efficace et personnalisée."
+          </p>
+        </aside>
+      </div>
     </section>
-    
+
     <footer>
       <div id="a_propos">
-        <h3>A propos</h3>
+        <h3>contact</h3>
         <p>
           <a href="#">Fonctionnement du site</a><br />
           <a href="#">Conditions générales de vente</a><br />
@@ -122,14 +165,14 @@
         </p>
       </div>
       <div id="nos_hébergements">
-        <h3>Nos hébergements</h3>
+        <h3>Réseaux sociaux</h3>
         <p>
           <a href="#">Charte qualité</a><br />
           <a href="#">Soumettre votre hôtel</a>
         </p>
       </div>
       <div id="assistance">
-        <h3>Assistance</h3>
+        <h3>Position</h3>
         <p>
           <a href="#">Centre d'aide</a><br />
           <a href="#">Nous contacter</a>

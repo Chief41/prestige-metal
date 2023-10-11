@@ -1,275 +1,259 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rochester', cursive;
+}
 
 /* En-tête, logo et liens */
 
 header {
-    height: 8rem;
-    width: 100%;
-    display: flex;
-    background-color:#141414;
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    left: 0;
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  background-color: #141414;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-
 header ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 94%;
-    list-style: none;
-    font-weight: bold;
-    font-size: x-large;
-    font-family: 'Bakbak One', cursive;
-    color: rgb(148, 106, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 94%;
+  list-style: none;
+  font-weight: bold;
+  font-size: x-large;
+  color: rgb(148, 106, 0);
 }
 
 header li {
-    cursor: pointer;
+  cursor: pointer;
+  font-family: 'Trocchi', serif;
 }
 
 header li:hover {
-    color: rgb(203, 199, 199);
-    transition: 0.6s;
+  color: rgb(203, 199, 199);
+  transition: 0.6s;
 }
-
-
 
 /* Le corps du site. Avec image de fond et opacité */
 
-
 section {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: rgb(148, 106, 0);
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(148, 106, 0);
 }
 
 section::before {
-    content: '';
-    background-image: url(photo/2021-06-17.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.50;
+  content: "";
+  background-image: url(photo/2021-06-17.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
 }
-
 
 /* Le bloc à propos */
 
-
 #accueil-page {
-    opacity: 0.65;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 13rem;
-    width: 70%;
-    padding: 2rem;
-    border-radius: 20px;
-    background-color: rgb(221, 221, 221);
+  opacity: 0.78;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13rem;
+  width: 70%;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgb(221, 221, 221);
 }
-
 
 /* Les services et galeries photo */
 
 #services {
-    opacity: 0.99;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 8rem;
-    width: 100%;
-    padding: 2rem;
-    background-color: rgb(221, 221, 221);
+  opacity: 0.99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgb(221, 221, 221);
 }
 
-
-
-
 #services ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    font-family: 'Bakbak One', cursive;
-    font-size: larger;
-    letter-spacing: 2px;
-    margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  font-size: larger;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
 }
 
 .metiers-liste {
-    width: 50%;
-    margin-bottom: 55px;
+  width: 50%;
+  margin-bottom: 55px;
 }
 
 .contactMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
 }
 
 button {
-    padding: 0.5rem;
-    background: rgb(148, 106, 0);
-    border-radius: 20px;
-    font-size: medium;
-    font-family: 'Bakbak One', cursive;
-    width: 20%;
-    height: 3rem;
-    margin-top: 15px;
+  padding: 0.5rem;
+  background: rgb(148, 106, 0);
+  border-radius: 20px;
+  font-size: medium;
+  width: 20%;
+  height: 3rem;
+  margin-top: 15px;
 }
 
 .photoTaff {
-    width: 50%;
+  width: 50%;
 }
 
 .galery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1300px;
-    margin: 70px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1300px;
+  margin: 70px auto 0;
 }
 
-.galery img{
-    width: 100%;
-    height: 12rem;
-    border-radius: 25px;
-    border: 2px solid black;
-    box-shadow: inset 10px gold;
+.galery img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 25px;
+  border: 2px solid black;
+  box-shadow: inset 10px gold;
 }
 
 .items {
-    width: 40%;
-    padding: 1rem;
-    border-radius: 25px;
-    margin-top : 17px;
-    height: 13rem;
-};
-
+  width: 40%;
+  padding: 1rem;
+  border-radius: 25px;
+  margin-top: 17px;
+  height: 13rem;
+}
 
 /* Le formulaire */
 
-.formBackground {
+.formOfForm {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 2rem;
-    background-color: rgb(221, 221, 221);
-    opacity: 0.65;
-    position: absolute;
-    width: 50%;
-    
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 form {
-    width: 50%;
-    height: 23rem;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  width: 50%;
+  height: 23rem;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: rgb(221, 221, 221);
+  opacity: 0.8;
+}
+
+input {
+  width: 45%;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border-color: #141414;
+}
+
+label {
+  color: rgb(148, 106, 0);
+  font-weight: bold;
+  font-size: larger;
+  letter-spacing: 2px;
+}
+
+.timeToContact {
     background-color: rgb(221, 221, 221);
-    opacity: 0.80;
-    margin: 50px auto;
-  }
-
-  input {
-    width: 45%;
-    height: 30px;
-    text-align: center;
-    border-radius: 20px;
-    border-color: #141414;
-  }
-
-   label {
-    color: rgb(148, 106, 0);
-    font-weight: bold;
-    font-size: larger;
+    border-radius: 100px;
     letter-spacing: 2px;
-  }
-
-
-
+    opacity: 0.8;
+    width: 40%;
+    padding: 2rem;
+    position: relative;
+}
 
 /* Les titres et paragraphes pour chaques parties */
 
 article h2 {
-    text-align: center;
+  text-align: center;
+  font-family: 'Trocchi', serif;
+  color: rgb(148, 106, 0);
 }
 
-
 h2 {
-    font-family: 'Bakbak One', cursive;
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Trocchi', serif;
+  color: rgb(148, 106, 0);
 }
 
 h3 {
-    font-family: 'Bakbak One', cursive; 
-    margin-top: 10px;
+  margin-top: 10px;
+  font-family: 'Trocchi', serif;
+  color: rgb(148, 106, 0);
 }
 
 p {
-    font-family: 'Bakbak One', cursive;
-    text-align: center;
-    width: 94%;
-    font-weight: 400;
-    margin-top: 10px;
+  text-align: center;
+  width: 94%;
+  font-weight: 400;
+  font-size: larger;
+  margin-top: 10px;
 }
-
 
 /* pieds de page */
 
 footer {
-    background: #141414;;
-    opacity: 0.99;
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+  background: #141414;
+  opacity: 0.99;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 footer h3 {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
+  font-family: 'Trocchi', serif;
 }
 
 footer a {
-    text-decoration: none;
-    color: rgb(148, 106, 0);
+  text-decoration: none;
+  color: rgb(148, 106, 0);
 }
 
 footer p {
-    width: 100%;
+  width: 100%;
 }
-
-
-
-
-
-
-
-
