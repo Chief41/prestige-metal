@@ -5,20 +5,28 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <img src="photo/1640291950393.jpg" alt="logo prestige Metal" />
       <ul>
-        <li><a href="#accueil-page"></a>Qui sommes-nous ?</li>
-        <li><a href="#services"></a>Nos services</li>
-        <li><a href="#contact"></a>Contact</li>
+        <li>
+          <a href="#accueil-page" class="smooth-scroll">Qui sommes-nous ?</a>
+        </li>
+        <li><a href="#services" class="smooth-scroll">Nos services</a></li>
+        <li><a href="#contact" class="smooth-scroll">Contact</a></li>
       </ul>
     </header>
     <section>
@@ -95,7 +103,9 @@
           </div>
         </article>
       </div>
+
       <div class="formOfForm">
+        <div id="contact"></div>
         <form action="formularEntrant" method="POST">
           <label for="firstName">Nom</label>
           <input
